@@ -1,9 +1,9 @@
-import { ComponentPropsWithoutRef, FC } from "react";
+import { ComponentPropsWithRef, FC } from "react";
 import "./input.css";
 
 type Props = {
   label: string;
-} & ComponentPropsWithoutRef<"input">;
+} & ComponentPropsWithRef<"input">;
 
 export const Input: FC<Props> = ({ label, ...props }) => {
   return (
